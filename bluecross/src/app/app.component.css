@@ -1,0 +1,35 @@
+.banner {
+  width: 213px;
+  height: 45px;
+}
+hr {
+    border: 2px solid #2D60BD;
+}
+.header{
+  margin-top:16px;
+}
+.hide-show{
+  margin: -3.62em 3% 0 1.5%;
+  position: relative;
+  z-index: 5;
+  background: #808080;
+  color:#fff;
+  font-size: 1em;
+  text-align: center;
+  padding: 2px;
+  float: right;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.check{
+  color:#1DBA5E;
+  vertical-align: bottom;
+  font-size: 20px !important;
+}
+.pass-div{
+ background:  #F2F2F2;
+ padding:16px;
+}
+.head-text{
+  color:#1D1D68;
+}

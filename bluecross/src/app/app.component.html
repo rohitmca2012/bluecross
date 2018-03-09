@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row header">
+    <div class="col s12 m12 center-align">
+      <img src="assets/bcbsma-logo.png" class="image-responsive" alt="image">
+      <img src="assets/myblue-logo.png" class="banner" alt="image">
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col s12">
+      <h5 class="head-text">Create Account</h5>
+      <p>We'll send a text verification message and data rates may apply</p>
+    </div>
+   </div>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <router-outlet></router-outlet><br>
+        <a routerLink="/{{method}}" (click)="changeMethod(method)" routerLinkActive="active">Use {{method}} instead</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input #input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+          <div>
+            <span  class="hide-show" type="button" (click)="showPassword(input)">{{passwordButtonText}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 pass-div">
+          <b>Password Requirements</b>
+          <p><i class="material-icons check">check</i> Atleast 8 characters</p>
+          <p><i class="material-icons check">check</i> Must include a number</p>
+          <p><i class="material-icons check ">check</i> Must include uppercase letter</p>
+          <p><i class="material-icons check">check</i> Must include a special character</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p>
+            <input type="checkbox" id="agreement" />
+            <label for="agreement">Yes I wish to receive information from Blue Cross Blue Shiled of massachusetts By clicking "Continue" I agree to the Blue Cross  Blue Shiled of massachusetts terms of use and confidentiality.</label>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <button class="btn waves-effect col s12 waves-light" type="submit" name="action">Continue
+            <i class="mdi-content-send right"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+        <div class="col s11 offset-s1">
+          <p>* Field is required</p>
+        </div>
+    </div>
+  </div>
+</div>
+
